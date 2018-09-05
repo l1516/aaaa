@@ -14,7 +14,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class TestShiPeiQi {
 
     private SourceClass sourceClass;
-
     @Test
     public void test() {
         sourceClass = new SourceClassImpl();
