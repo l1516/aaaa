@@ -6,6 +6,6 @@ public class DestinationClassImpl implements DestinationClass {
 
     @Override
     public String mp3() {
-        return "i am SuperClassImpl mp3";
+        return "i am InterfaceImpl1 mp3";
     }
 }

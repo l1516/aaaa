@@ -28,10 +28,10 @@ public class TestSerializable {
         List<User> users = userService.findAll();
         ObjectOutputStream
             objectOutputStream =
-            new ObjectOutputStream(new FileOutputStream(new File("D:/SuperClassImpl.txt")));
+            new ObjectOutputStream(new FileOutputStream(new File("D:/InterfaceImpl1.txt")));
         objectOutputStream.writeObject(users);
         objectOutputStream.close();
-        StringReader a = new StringReader("SuperClassImpl");
+        StringReader a = new StringReader("InterfaceImpl1");
 
     }
 

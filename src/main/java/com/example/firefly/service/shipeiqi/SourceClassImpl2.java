@@ -11,6 +11,6 @@ public class SourceClassImpl2 implements SourceClass {
     @Override
     public String mp4() {
         String a = this.destinationClass.mp3();
-        return "i am SuperClassImpl mp4;" + a;
+        return "i am InterfaceImpl1 mp4;" + a;
     }
 }
