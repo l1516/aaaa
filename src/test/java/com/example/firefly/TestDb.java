@@ -1,13 +1,10 @@
 package com.example.firefly;
 
-import com.example.firefly.pojo.Location;
-import com.example.firefly.pojo.User;
 import com.example.firefly.service.LocationService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
@@ -22,7 +19,7 @@ public class TestDb {
 
     @Test
     public void testSave() {
-        locationService.save(new Location("河南", "巩义"));
+//        locationService.save(new Location("河南", "巩义"));
 
     }
 

@@ -1,18 +1,9 @@
 package com.example.firefly.pojo;
 
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EntityListeners;
-
-@Entity
-@EntityListeners(AuditingEntityListener.class)
 public class Location extends CommonPoJo {
 
-    @Column
     private String city;
 
     public Location() {

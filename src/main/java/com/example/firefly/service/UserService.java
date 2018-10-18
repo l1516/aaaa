@@ -1,12 +1,14 @@
 package com.example.firefly.service;
 
 import com.example.firefly.pojo.User;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public interface UserService extends JpaRepository<User, Long> {
+public interface UserService {
 
     List<User> findAll();
+
+    User save(User user);
 
 }

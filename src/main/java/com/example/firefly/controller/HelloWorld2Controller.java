@@ -16,7 +16,8 @@ public class HelloWorld2Controller {
 
     @RequestMapping("/hello2")
     public List<User> index() {
-        return userService.findAll();
+        List<User> list = userService.findAll();
+        return list;
     }
 
     @RequestMapping("/index4")

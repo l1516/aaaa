@@ -1,15 +1,6 @@
 package com.example.firefly.pojo;
 
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import java.io.Serializable;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EntityListeners;
-
-@Entity
-@EntityListeners(AuditingEntityListener.class)
 public class User extends CommonPoJo {
 
     public User() {
@@ -20,8 +11,8 @@ public class User extends CommonPoJo {
         this.setName(name);
     }
 
-    @Column
     private String age;
+    private String password;
 
     public String getAge() {
         return age;
@@ -31,5 +22,11 @@ public class User extends CommonPoJo {
         this.age = age;
     }
 
+    public String getPassword() {
+        return password;
+    }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
