@@ -6,12 +6,11 @@
 </head>
 <body>
 nice to meet you index!
-<p  th:text="${test}"></p>
-<tr th:each="user: ${users}">
+<div th:each="user: ${users}">
   <th scope="row" th:text="${user.id}"></th>
   <td th:text="${user.name}"></td>
+  <td th:text="${user.password}"></td>
   <td th:text="${user.age}"></td>
-  <td th:text="${user.createTime}"></td>
-</tr>
+</div>
 </body>
 </html>
