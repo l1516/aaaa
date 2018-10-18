@@ -3,16 +3,17 @@ package com.example.firefly.pojo;
 
 public class User extends CommonPoJo {
 
+    private String age;
+    private String password;
+
     public User() {
 
     }
 
-    public User(String name) {
+    public User(String name, String password) {
         this.setName(name);
+        this.setPassword(password);
     }
-
-    private String age;
-    private String password;
 
     public String getAge() {
         return age;
