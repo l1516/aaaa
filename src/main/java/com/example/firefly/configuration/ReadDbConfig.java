@@ -15,7 +15,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-@PropertySource("classpath:db.properties")
+@PropertySource("classpath:mybatisDb.properties")
 @MapperScan(basePackages = "com.example.firefly.mapper.read.*", sqlSessionTemplateRef = "readSqlSessionTemplate")
 public class ReadDbConfig {
 

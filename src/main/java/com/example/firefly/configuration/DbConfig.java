@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource("classpath:db.properties")
+@PropertySource("classpath:mybatisDb.properties")
 
 @EnableCaching
 public class DbConfig {
