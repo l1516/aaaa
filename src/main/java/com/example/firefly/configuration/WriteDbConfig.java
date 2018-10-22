@@ -3,6 +3,7 @@ package com.example.firefly.configuration;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
@@ -16,7 +17,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @PropertySource("classpath:mybatisDb.properties")
-//@MapperScan(basePackages = "com.example.firefly.mapper.write.*", sqlSessionTemplateRef = "writeSqlSessionTemplate")
+@MapperScan(basePackages = "com.example.firefly.mapper.write.*", sqlSessionTemplateRef = "writeSqlSessionTemplate")
 public class WriteDbConfig {
 
     @Bean(name = "writeDataSource")
